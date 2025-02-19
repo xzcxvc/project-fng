@@ -13,7 +13,7 @@ const Hero = () => {
     <Section>
       <div
         id="hero"
-        className="object-contain flex flex-col justify-center items-center"
+        className="object-contain flex flex-col justify-center items-center relative"
       >
         <div className="z-2">
           <video className="videoTag w-screen" autoPlay loop muted>
@@ -23,7 +23,7 @@ const Hero = () => {
 
         <Heading
           title="The Observatory"
-          className="absolute px-20 py-5 bg-gradient-to-r from-color-6/10   via-color-6/10 hidden lg:block"
+          className="absolute mt-52 px-20 py-5 bg-gradient-to-r from-color-6/10   via-color-6/10 hidden lg:block"
         >
           <p className="text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
@@ -43,9 +43,30 @@ const Hero = () => {
           ))}
         </div>
       </div>
+      <div className="absolute">
+        <img
+          className="relative  lg:bottom-[225px] bottom-[790px] lg:h-full h-auto w-screen -z-20"
+          src={accent1}
+          alt="background"
+        />
+      </div>
 
-      <div className="relative -top-[229px] -z-10">
-        <img className="absolute top-0 left-0 w-screen" src={accent1} alt="background" />
+      <div className="relative bottom-[5rem] w-full z-2 px-[10rem] lg:pb-28 mt-[7rem] lg:mt-0">
+        <div className="flex items-center justify-center lg:justify-between gap-12 lg:flex-row flex-col">
+          <h1 className="font-bold lg:text-[67px] text-[42px] ">
+            Enjoy A Luxury Experience at The Observatory
+          </h1>
+
+          <div className="border-[10px] border-yellow-500 shadow-1">
+            <img
+              className="lg:w-[60rem] lg:h-[30rem]"
+              width={650}
+              height={320}
+              src=""
+              alt="image"
+            />
+          </div>
+        </div>
       </div>
     </Section>
   );

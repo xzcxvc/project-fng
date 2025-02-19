@@ -32,6 +32,9 @@ export default {
           13: "#6C7275",
         },
       },
+      boxShadow: {
+        1: "6px 6px 12px 0px rgba(0, 0, 0, 0.4)",
+      },
     },
   },
   plugins: [],
